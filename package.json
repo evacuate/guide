@@ -1,0 +1,31 @@
+{
+  "name": "guide",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": ["evacuate"],
+  "homepage": "https://github.com/evacuate/guide#readme",
+  "bugs": {
+    "url": "https://github.com/evacuate/guide/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evacuate/guide.git"
+  },
+  "license": "MIT",
+  "author": "evacuate",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "check": "biome check ./src",
+    "check:write": "biome check --write ./src",
+    "format": "biome format .",
+    "format:write": "biome format --write ./src",
+    "lint": "biome lint ./src",
+    "watch": "eleventy --watch"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@biomejs/biome": "^1.9.2",
+    "eleventy-plugin-sitemap": "^1.0.1"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  {% if breadcrumbs %}
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        {% for crumb in breadcrumbs %}
+          {% if not loop.last %}
+            <li class="breadcrumb-item"><a href="{{ crumb.url }}">{{ crumb.title }}</a></li>
+          {% else %}
+            <li class="breadcrumb-item active" aria-current="page">{{ crumb.title }}</li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </nav>
+  {% endif %}
+  <main>
+    {{ content | safe }}
+  </main>
+</body>
+</html>
