@@ -12,15 +12,18 @@
   </header>
   {% if breadcrumbs %}
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
+      <div class="breadcrumb">
         {% for crumb in breadcrumbs %}
+          {% if not loop.first %}
+            &gt;
+          {% endif %}
           {% if not loop.last %}
-            <li class="breadcrumb-item"><a href="{{ crumb.url }}">{{ crumb.title }}</a></li>
+            <a href="{{ crumb.url }}">{{ crumb.title }}</a>
           {% else %}
-            <li class="breadcrumb-item active" aria-current="page">{{ crumb.title }}</li>
+            <span>{{ crumb.title }}</span>
           {% endif %}
         {% endfor %}
-      </ol>
+      </div>
     </nav>
   {% endif %}
   <main>
