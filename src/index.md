@@ -6,4 +6,8 @@ breadcrumbs:
   - { title: "Home", url: "/" }
 ---
 
-# Evacuate Guide
+### Evacuate Guide
+
+```
+This is a guide to help you evacuate in case of an emergency.
+```
