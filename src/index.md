@@ -1,13 +1,8 @@
 ---
-title: Home
+title: Hello
 layout: base.njk
 permalink: /
 breadcrumbs:
-  - { title: "Home", url: "/" }
 ---
 
-### Evacuate Guide
-
-```
-This is a guide to help you evacuate in case of an emergency.
-```
+> **Note:** The information on this website may not always be accurate as it is created and maintained by the community.

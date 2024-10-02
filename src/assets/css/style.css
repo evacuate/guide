@@ -138,7 +138,7 @@
   scroll-behavior: auto !important;
 
   /* Appended code */
-  max-width: 1012px;
+  max-width: 768px;
   margin: var(--base-size-24) auto;
   padding: 0px var(--base-size-16);
 }
