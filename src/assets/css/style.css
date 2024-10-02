@@ -125,6 +125,11 @@
   }
 }
 
+nav {
+  margin-top: var(--base-size-16);
+  margin-bottom: var(--base-size-16);
+}
+
 .container {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
