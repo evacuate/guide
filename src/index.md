@@ -10,14 +10,14 @@ breadcrumbs:
 This website provides information useful during disasters in Japan.
 Currently, it covers the following disaster information:
 
-| Disaster         | Coverage rate |
-| ---------------- | ------------- |
-| Earthquake       | 0%            |
-| Heavy Rain       | 0%            |
-| Strong Wind      | 0%            |
-| Fire             | 0%            |
-| Flooding         | 0%            |
-| Power Outage     | 0%            |
-| Collision        | 0%            |
-| Lightning Strike | 0%            |
-| Tsunami          | 0%            |
+| Disaster         | Coverage rate | Information Sources | Last Updated |
+| ---------------- | ------------- | ------------------- | ------------ |
+| Earthquake       | 0%            | N/A                 | 01/10/2024   |
+| Heavy Rain       | 0%            | N/A                 | 01/10/2024   |
+| Strong Wind      | 0%            | N/A                 | 01/10/2024   |
+| Fire             | 0%            | N/A                 | 01/10/2024   |
+| Flooding         | 0%            | N/A                 | 01/10/2024   |
+| Power Outage     | 0%            | N/A                 | 01/10/2024   |
+| Collision        | 0%            | N/A                 | 01/10/2024   |
+| Lightning Strike | 0%            | N/A                 | 01/10/2024   |
+| Tsunami          | 0%            | N/A                 | 01/10/2024   |
