@@ -33,3 +33,12 @@ We are committed to improving this guide with detailed action plans and resource
 2. **Links to Official Sources**: Direct links to government websites, meteorological agencies, and other official resources where real-time updates can be checked.
 3. **Localized Information**: Practical advice and tips based on region-specific risks and disaster history in Japan.
 4. **Community Feedback**: A feature allowing users to provide feedback and suggestions for improving each section of the guide.
+
+### Important Websites to Check During Disasters
+
+While this site offers general guidelines, always refer to the following official sources for real-time updates during emergencies:
+
+- **Japan Meteorological Agency (JMA)**: [https://www.jma.go.jp](https://www.jma.go.jp)
+- **NHK News**: [https://www3.nhk.or.jp/nhkworld/en/news/](https://www3.nhk.or.jp/nhkworld/en/news/)
+- **Local Government Websites**: Each prefecture or city often has its own disaster prevention site.
+- **Electricity Company Websites**: For power outage updates, check your local electric company's website.
