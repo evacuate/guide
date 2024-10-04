@@ -5,7 +5,7 @@ permalink: /
 breadcrumbs:
 ---
 
-> **Note:** The information on this website may not always be accurate as it is created and maintained by the community.
+> **Note:** The information on this website may not always be accurate as it is created and maintained by the community. We encourage users to verify critical information through official sources during emergencies.
 
 This website provides information useful during disasters in Japan.
 Currently, it covers the following disaster information:
