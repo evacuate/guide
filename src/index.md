@@ -24,3 +24,12 @@ Below is a summary of the current progress for each disaster-specific page on th
 | Collision        | 0%                       | Emergency response for vehicle collisions | 01/10/2024       |
 | Lightning Strike | 0%                       | Lightning strike precautions              | 01/10/2024       |
 | Tsunami          | 0%                       | Tsunami evacuation and safety measures    | 01/10/2024       |
+
+### Future Updates
+
+We are committed to improving this guide with detailed action plans and resources for each type of disaster. As we develop this content, the focus will be on providing the following:
+
+1. **Disaster-Specific Action Plans**: Step-by-step instructions on what to do before, during, and after each disaster.
+2. **Links to Official Sources**: Direct links to government websites, meteorological agencies, and other official resources where real-time updates can be checked.
+3. **Localized Information**: Practical advice and tips based on region-specific risks and disaster history in Japan.
+4. **Community Feedback**: A feature allowing users to provide feedback and suggestions for improving each section of the guide.
