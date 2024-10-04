@@ -42,3 +42,13 @@ While this site offers general guidelines, always refer to the following officia
 - **NHK News**: [https://www3.nhk.or.jp/nhkworld/en/news/](https://www3.nhk.or.jp/nhkworld/en/news/)
 - **Local Government Websites**: Each prefecture or city often has its own disaster prevention site.
 - **Electricity Company Websites**: For power outage updates, check your local electric company's website.
+
+### How to Use This Guide
+
+- **Preparation**: Use this guide to familiarize yourself with general disaster response actions before an emergency occurs.
+- **Real-Time Response**: During an emergency, consult the official sources listed above for the most up-to-date information.
+- **Aftermath**: Follow the recovery steps in the relevant sections of this guide to ensure safety in the aftermath of a disaster.
+
+For any questions or to contribute to the development of this guide, please contact us through our [Feedback Form](#).
+
+_Last Updated: 04/10/2024_
