@@ -11,6 +11,19 @@ module.exports = (eleventyConfig) => {
     },
   });
 
+  eleventyConfig.on('afterBuild', () => {
+    const CleanCSS = require('clean-css');
+    const fs = require('fs');
+
+    // Run me after the build ends
+    var inputFile = 'src/assets/css/style.css';
+    var input = fs.readFileSync(inputFile, 'utf8');
+    var output = new CleanCSS().minify(input);
+    fs.writeFile('_site/assets/css/style.css', output.styles, function (err) {
+      if (err) return console.log('Error minifying style.css' + err);
+    });
+  });
+
   // Define directories
   return {
     dir: {
