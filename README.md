@@ -72,8 +72,6 @@
 
 ## Author
 
-I proposed, facilitated, and developed the entire project.
-
 - Minagishl ([@minagishl](https://github.com/minagishl))
 
 ## License
