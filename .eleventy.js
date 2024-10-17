@@ -1,19 +1,28 @@
-const sitemap = require('eleventy-plugin-sitemap');
+const sitemap = require('@quasibit/eleventy-plugin-sitemap');
+const fs = require('fs');
 
 module.exports = (eleventyConfig) => {
   // Passthrough copy for static assets
   eleventyConfig.addPassthroughCopy('src/assets');
 
+  const hostname = 'https://evacuate.github.io/';
+
   // Add sitemap plugin
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {
-      hostname: 'https://yourdomain.com', // Replace with your domain
+      hostname: hostname,
     },
   });
 
   eleventyConfig.on('afterBuild', () => {
+    //Replace url in Sitemap
+    const sitemap = fs.readFileSync('_site/sitemap.xml', 'utf8');
+    const sitemapWithHostname = sitemap.replace(/https:\/\/evacuate.github.io\//g, hostname + 'guide/');
+    fs.writeFileSync('_site/sitemap.xml', sitemapWithHostname);
+  });
+
+  eleventyConfig.on('afterBuild', () => {
     const CleanCSS = require('clean-css');
-    const fs = require('fs');
 
     // Run me after the build ends
     var inputFile = 'src/assets/css/style.css';
