@@ -2,9 +2,7 @@
   "name": "guide",
   "version": "1.0.0",
   "description": "",
-  "keywords": [
-    "evacuate"
-  ],
+  "keywords": ["evacuate"],
   "homepage": "https://github.com/evacuate/guide#readme",
   "bugs": {
     "url": "https://github.com/evacuate/guide/issues"
@@ -16,12 +14,13 @@
   "license": "MIT",
   "author": "evacuate",
   "scripts": {
-    "start": "eleventy --serve",
     "build": "eleventy",
     "format": "prettier --write .",
     "format:check": "prettier --check 'src/**/*",
     "format:write": "prettier --write 'src/**/*",
     "lint": "biome lint ./src",
+    "sort": "node scripts/sort.mjs",
+    "start": "eleventy --serve",
     "watch": "eleventy --watch"
   },
   "devDependencies": {
@@ -29,5 +28,6 @@
     "clean-css-cli": "^5.6.3",
     "eleventy-plugin-sitemap": "^1.0.1",
     "prettier": "^3.3.3"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }
