@@ -3,6 +3,7 @@ title: Disaster Response Guide
 layout: base.njk
 permalink: /
 breadcrumbs:
+description: A comprehensive resource for disaster preparedness and action plans during different types of disasters in Japan.
 ---
 
 > **Note:** The information on this website may not always be accurate as it is created and maintained by the community. We encourage users to verify critical information through official sources during emergencies.
