@@ -1,4 +1,5 @@
 const sitemap = require('@quasibit/eleventy-plugin-sitemap');
+const htmlmin = require('html-minifier-terser');
 const fs = require('fs');
 
 module.exports = (eleventyConfig) => {
@@ -31,6 +32,21 @@ module.exports = (eleventyConfig) => {
     fs.writeFile('_site/assets/css/style.css', output.styles, function (err) {
       if (err) return console.log('Error minifying style.css' + err);
     });
+  });
+
+  // Minify HTML output
+  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
+    if (outputPath && outputPath.endsWith('.html')) {
+      let minified = htmlmin.minify(content, {
+        removeComments: true,
+        collapseWhitespace: true,
+        minifyJS: true,
+        minifyCSS: true,
+      });
+      return minified;
+    }
+
+    return content;
   });
 
   // Define directories
