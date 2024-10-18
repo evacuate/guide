@@ -3,7 +3,8 @@ title: About
 layout: base.njk
 permalink: /about/
 breadcrumbs:
-  - label: About
+  - { title: 'Home', url: '/' }
+  - { title: 'About', url: '/about/' }
 description: Learn more about the Disaster Response Guide and how you can contribute to its development.
 ---
 
