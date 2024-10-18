@@ -2,6 +2,16 @@ const sitemap = require('@quasibit/eleventy-plugin-sitemap');
 const htmlmin = require('html-minifier-terser');
 const fs = require('fs');
 
+function minifyJsonLd(content) {
+  return content.replace(
+    /(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/g,
+    (_, openTag, jsonContent, closeTag) => {
+      const minifiedJson = JSON.stringify(JSON.parse(jsonContent));
+      return `${openTag}${minifiedJson}${closeTag}`;
+    }
+  );
+}
+
 module.exports = (eleventyConfig) => {
   // Passthrough copy for static assets
   eleventyConfig.addPassthroughCopy('src/assets');
@@ -37,9 +47,11 @@ module.exports = (eleventyConfig) => {
   // Minify HTML output
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (outputPath && outputPath.endsWith('.html')) {
+      content = minifyJsonLd(content);
       let minified = htmlmin.minify(content, {
         removeComments: true,
         collapseWhitespace: true,
+        removeAttributeQuotes: true,
         minifyJS: true,
         minifyCSS: true,
       });
