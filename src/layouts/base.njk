@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
 
-  <!-- Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';" />
-
   <!-- Meta description -->
   <meta name="description" content="{{ description }}">
 
@@ -73,7 +70,7 @@
     </div>
   </nav>
   {% endif %}
-  <main>
+  <main data-pagefind-body>
     {{ content | safe }}
   </main>
 </body>

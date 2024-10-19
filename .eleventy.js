@@ -1,6 +1,7 @@
 const sitemap = require('@quasibit/eleventy-plugin-sitemap');
 const htmlmin = require('html-minifier-terser');
 const fs = require('fs');
+const { execSync } = require('child_process');
 
 function minifyJsonLd(content) {
   return content.replace(
@@ -59,6 +60,11 @@ module.exports = (eleventyConfig) => {
     }
 
     return content;
+  });
+
+  // Run pagefind after build
+  eleventyConfig.on('eleventy.after', () => {
+    execSync(`npx pagefind --site _site --glob \"**/*.html\"`, { encoding: 'utf-8' });
   });
 
   // Define directories
