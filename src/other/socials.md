@@ -26,8 +26,8 @@ description: Connect with us on social media to stay updated on disaster prepare
 ## Social Networking
 
 - **Mastodon**: [@evacuate](https://mastodon.social/@evacuate)
-- **Bluesky**: [@evacuate.jp](https://bsky.app/profile/evacuate.jp)
-- **Nostr**: [@evacuate.jp](https://nostter.app/evacuate.jp)
-- **Facebook**: [@evacuate.jp](https://www.facebook.com/evacuate.jp)
-- **Instagram**: [@evacuate.jp](https://www.instagram.com/evacuate.jp)
-- **Threads**: [@evacuate.jp](https://www.threads.net/@evacuate.jp)
+- **Bluesky**: [@evacuate.io](https://bsky.app/profile/evacuate.io)
+- **Nostr**: [@evacuate.io](https://nostter.app/evacuate.io)
+- **Facebook**: [@evacuate.io](https://www.facebook.com/evacuate.io)
+- **Instagram**: [@evacuate.io](https://www.instagram.com/evacuate.io)
+- **Threads**: [@evacuate.io](https://www.threads.net/@evacuate.io)

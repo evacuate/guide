@@ -27,7 +27,7 @@ The Disaster Response Guide is an open-source project that welcomes contribution
 
 ### Contact Us
 
-If you have any questions, feedback, or suggestions for the Disaster Response Guide, please feel free to contact us at [contact@evacuate.jp](mailto:contact@evacuate.jp). Your input is valuable in helping us improve the guide and make it more useful for everyone.
+If you have any questions, feedback, or suggestions for the Disaster Response Guide, please feel free to contact us at [hello@evacuate.io](mailto:hello@evacuate.io). Your input is valuable in helping us improve the guide and make it more useful for everyone.
 
 Thank you for your support and commitment to enhancing disaster preparedness and response efforts in Japan.
 
