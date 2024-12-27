@@ -12,7 +12,7 @@
 ### Prerequisites
 
 - Node.js (version 20 or higher)
-- yarn (or yarn, although this project prefers yarn)
+- pnpm (version 9 or higher)
 
 ### Installation
 
@@ -31,7 +31,7 @@
 3. Install dependencies:
 
    ```bash
-   yarn install
+   pnpm install
    ```
 
 ### Scripts
@@ -39,25 +39,25 @@
 - **Build**: Build the project
 
   ```bash
-  yarn run build
+  pnpm build
   ```
 
 - **Start**: Start the development server
 
   ```bash
-  yarn run start
+  pnpm start
   ```
 
 - **Format Code**: Format code
 
   ```bash
-  yarn run format
+  pnpm format
   ```
 
 - **Lint Code**: Lint code
 
   ```bash
-  yarn run lint
+  pnpm lint
   ```
 
 ### Usage
@@ -65,7 +65,7 @@
 1. Start the development server:
 
    ```bash
-   yarn run start
+   pnpm start
    ```
 
 2. Open the browser and navigate to `http://localhost:8080`
