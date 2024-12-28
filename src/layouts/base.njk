@@ -1,82 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} - Evacuate Guide</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
+    <!-- Meta description -->
+    <meta name="description" content="{{ description }}" />
 
-  <!-- Meta description -->
-  <meta name="description" content="{{ description }}">
+    <!-- Meta keywords -->
+    <meta
+      name="keywords"
+      content="evacuate, guide, documentation, how-to, tutorial, handbook"
+    />
 
-  <!-- Meta keywords -->
-  <meta name="keywords" content="evacuate, guide, documentation, how-to, tutorial, handbook">
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://evacuate.github.io/guide{{ page.url }}"
+    />
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://evacuate.github.io/guide{{ page.url }}">
+    <!-- Open Graph Tags for social sharing -->
+    <meta property="og:title" content="{{ title }} - Evacuate Guide" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://evacuate.github.io/guide{{ page.url }}"
+    />
+    <meta
+      property="og:image"
+      content="https://evacuate.github.io/guide/assets/images/og.png"
+    />
+    <meta property="og:locale" content="en_US" />
 
-  <!-- Open Graph Tags for social sharing -->
-  <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://evacuate.github.io/guide{{ page.url }}">
-  <meta property="og:image" content="https://evacuate.github.io/guide/assets/images/og.png">
-  <meta property="og:locale" content="en_US">
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ title }} - Evacuate Guide" />
+    <meta name="twitter:description" content="{{ description }}" />
+    <meta
+      name="twitter:image"
+      content="https://evacuate.github.io/guide/assets/images/og.png"
+    />
 
-  <!-- Twitter Card tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:image" content="https://evacuate.github.io/guide/assets/images/og.png">
+    <link
+      rel="preload"
+      href="https://evacuate.github.io/guide/assets/css/style.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://evacuate.github.io/guide/assets/css/style.css"
+      media="print"
+      onload="this.media='all'"
+    />
 
-  <link rel="stylesheet" href="https://evacuate.github.io/guide/assets/css/style.css">
-
-  <!-- Structured data for breadcrumbs -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    <!-- Structured data for breadcrumbs -->
+    <script type="application/ld+json">
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "About",
-        "item": "https://evacuate.github.io/guide/about/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Social Media",
-        "item": "https://evacuate.github.io/guide/socials/"
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "{{ title }} - Evacuate Guide",
+        "description": "{{ description }}",
+        "url": "https://evacuate.github.io/guide{{ page.url }}",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "About",
+              "item": "https://evacuate.github.io/guide/about/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Social Media",
+              "item": "https://evacuate.github.io/guide/socials/"
+            }
+          ]
+        }
       }
-    ]
-  }
-  </script>
-</head>
+    </script>
 
-<body class="container">
-  <header>
-    <h1>{{ title }}</h1>
-  </header>
-  {% if breadcrumbs %}
-  <nav aria-label="breadcrumb">
-    <div class="breadcrumb">
-      {% for crumb in breadcrumbs %}
-      {% if not loop.first %}
-      &gt;
-      {% endif %}
-      {% if not loop.last %}
-      <a href="{{ crumb.url }}">{{ crumb.title }}</a>
-      {% else %}
-      <span>{{ crumb.title }}</span>
-      {% endif %}
-      {% endfor %}
-    </div>
-  </nav>
-  {% endif %}
-  <main data-pagefind-body>
-    {{ content | safe }}
-  </main>
-</body>
+    <!-- Structured data for search -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Evacuate Guide",
+        "url": "https://evacuate.github.io/guide",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://evacuate.github.io/guide/search/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  </head>
 
+  <body class="container">
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+    {% if breadcrumbs %}
+    <nav aria-label="breadcrumb">
+      <div class="breadcrumb">
+        {% for crumb in breadcrumbs %} {% if not loop.first %} &gt; {% endif %}
+        {% if not loop.last %}
+        <a href="{{ crumb.url }}">{{ crumb.title }}</a>
+        {% else %}
+        <span>{{ crumb.title }}</span>
+        {% endif %} {% endfor %}
+      </div>
+    </nav>
+    {% endif %}
+    <main data-pagefind-body>{{ content | safe }}</main>
+  </body>
 </html>
