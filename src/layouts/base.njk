@@ -106,8 +106,9 @@
     {% if breadcrumbs %}
     <nav aria-label="breadcrumb">
       <div class="breadcrumb">
-        {% for crumb in breadcrumbs %} {% if not loop.first %}<span class="arrow"> &gt; </span>{% endif %}
-        {% if not loop.last %}
+        {% for crumb in breadcrumbs %} {% if not loop.first %}
+        <span class="arrow"> &gt; </span>
+        {% endif %} {% if not loop.last %}
         <a
           href="https://evacuate.github.io/guide{{ crumb.url }}{% if crumb.url != '/' %}/{% endif %}"
           >{{ crumb.title }}</a
