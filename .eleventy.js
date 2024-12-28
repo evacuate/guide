@@ -2,6 +2,7 @@ const sitemap = require('@quasibit/eleventy-plugin-sitemap');
 const htmlmin = require('html-minifier-terser');
 const fs = require('fs');
 const { execSync } = require('child_process');
+const CleanCSS = require('clean-css');
 
 function minifyJsonLd(content) {
   return content.replace(
@@ -33,18 +34,6 @@ module.exports = (eleventyConfig) => {
     fs.writeFileSync('_site/sitemap.xml', sitemapWithHostname);
   });
 
-  eleventyConfig.on('afterBuild', () => {
-    const CleanCSS = require('clean-css');
-
-    // Run me after the build ends
-    var inputFile = 'src/assets/css/style.css';
-    var input = fs.readFileSync(inputFile, 'utf8');
-    var output = new CleanCSS().minify(input);
-    fs.writeFile('_site/assets/css/style.css', output.styles, function (err) {
-      if (err) return console.log('Error minifying style.css' + err);
-    });
-  });
-
   // Minify HTML output
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (outputPath && outputPath.endsWith('.html')) {
@@ -60,6 +49,10 @@ module.exports = (eleventyConfig) => {
     }
 
     return content;
+  });
+
+  eleventyConfig.addFilter('cssmin', function (code) {
+    return new CleanCSS({}).minify(code).styles;
   });
 
   // Run pagefind after build
