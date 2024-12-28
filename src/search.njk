@@ -3,8 +3,8 @@ title: Search
 layout: base.njk
 permalink: /search/
 breadcrumbs:
-  - { title: 'Home', url: '/' }
-  - { title: 'Search', url: '/search/' }
+  - { title: "Home", url: "/" }
+  - { title: "Search", url: "/search/" }
 description: Search for pages on the site
 ---
 
@@ -25,30 +25,40 @@ description: Search for pages on the site
   }
 </style>
 
-<blockquote><p><strong>Note:</strong> This search feature is automatically generated to provide the latest list of all pages on the site. If it does not function correctly, please use a search engine like Google.</p></blockquote>
+<blockquote>
+  <p>
+    <strong>Note:</strong> This search feature is automatically generated to
+    provide the latest list of all pages on the site. If it does not function
+    correctly, please use a search engine like Google.
+  </p>
+</blockquote>
 
 <section data-pagefind-ignore>
-  <script src="https://evacuate.github.io/guide/pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <script
+    src="https://evacuate.github.io/guide/pagefind/pagefind-ui.js"
+    type="text/javascript"
+  ></script>
   <div id="search" class="search"></div>
   <script>
     // Function to get query parameters
     function getQueryParam(param) {
       const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(param) || '';
+      return urlParams.get(param) || "";
     }
 
-    window.addEventListener('DOMContentLoaded', event => {
+    window.addEventListener("DOMContentLoaded", (event) => {
       // Get the "q" query parameter
-      const searchQuery = getQueryParam('q');
+      const searchQuery = getQueryParam("q");
 
       // Initialize PagefindUI
       const pagefind = new PagefindUI({
-        element: '#search',
+        element: "#search",
         showImages: false,
         translations: {
-          placeholder: 'Search this website',
-          zero_results: "We couldn't find any search results for '[SEARCH_TERM]'"
-        }
+          placeholder: "Search this website",
+          zero_results:
+            "We couldn't find any search results for '[SEARCH_TERM]'",
+        },
       });
 
       // Set the search query if it exists
