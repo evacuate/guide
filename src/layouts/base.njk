@@ -89,7 +89,7 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Evacuate Guide",
-        "url": "https://evacuate.github.io/guide",
+        "url": "https://evacuate.github.io/guide/",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://evacuate.github.io/guide/search/?q={search_term_string}",
@@ -108,7 +108,10 @@
       <div class="breadcrumb">
         {% for crumb in breadcrumbs %} {% if not loop.first %} &gt; {% endif %}
         {% if not loop.last %}
-        <a href="{{ crumb.url }}">{{ crumb.title }}</a>
+        <a
+          href="https://evacuate.github.io/guide{{ crumb.url }}{% if crumb.url != '/' %}/{% endif %}"
+          >{{ crumb.title }}</a
+        >
         {% else %}
         <span>{{ crumb.title }}</span>
         {% endif %} {% endfor %}
