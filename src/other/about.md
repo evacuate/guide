@@ -37,4 +37,4 @@ If you have any questions, feedback, or suggestions for the Disaster Response Gu
 
 Thank you for your support and commitment to enhancing disaster preparedness and response efforts in Japan.
 
-_Last Updated: 18/10/2024_
+_Last Updated: 28/12/2024_
