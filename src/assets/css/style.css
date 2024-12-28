@@ -12,6 +12,10 @@
   --fgColor-accent: Highlight;
 }
 
+.breadcrumb > .arrow {
+  user-select: none;
+}
+
 @media (prefers-color-scheme: dark) {
   .container,
   [data-theme='dark'] {
