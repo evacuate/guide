@@ -1,8 +1,11 @@
 const sitemap = require('@quasibit/eleventy-plugin-sitemap');
 const htmlmin = require('html-minifier-terser');
-const fs = require('fs');
+const fs = require('node:fs');
 const { execSync } = require('child_process');
 const CleanCSS = require('clean-css');
+const { createHash } = require('crypto');
+const flatCache = require('flat-cache');
+const { resolve } = require('node:path');
 
 function minifyJsonLd(content) {
   return content.replace(
@@ -58,6 +61,44 @@ module.exports = (eleventyConfig) => {
   // Run pagefind after build
   eleventyConfig.on('eleventy.after', () => {
     execSync(`npx pagefind --site _site --glob \"**/*.html\"`, { encoding: 'utf-8' });
+  });
+
+  // Shiki related
+  eleventyConfig.amendLibrary('md', () => {});
+
+  eleventyConfig.on('eleventy.before', async () => {
+    const shiki = await import('shiki');
+    const highlighter = await shiki.createHighlighter({
+      themes: ['github-dark', 'github-light'],
+      langs: ['html', 'blade', 'php', 'yaml', 'js', 'ts', 'shell', 'diff'],
+    });
+
+    eleventyConfig.amendLibrary('md', function (mdLib) {
+      return mdLib.set({
+        highlight: function (code, lang) {
+          const hash = createHash('md5').update(code).digest('hex');
+          const cache = flatCache.load(hash, resolve('./.cache/shiki'));
+          const cachedValue = cache.getKey(hash);
+
+          if (cachedValue) {
+            return cachedValue;
+          }
+
+          let highlightedCode = highlighter.codeToHtml(code, {
+            lang: lang,
+            themes: {
+              light: 'github-dark',
+              dark: 'github-dark',
+            },
+          });
+
+          cache.setKey(hash, highlightedCode);
+          cache.save();
+
+          return highlightedCode;
+        },
+      });
+    });
   });
 
   // Define directories
