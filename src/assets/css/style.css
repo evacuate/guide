@@ -913,7 +913,7 @@ nav {
   font-size: 85%;
   line-height: 1.45;
   color: var(--fgColor-default);
-  background-color: var(--bgColor-muted);
+  background-color: var(--bgColor-muted) !important;
   border-radius: 6px;
 }
 
