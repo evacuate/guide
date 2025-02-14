@@ -53,3 +53,5 @@ Japan is one of the most earthquake-prone countries in the world. Being prepared
 - Japan Meteorological Agency (JMA): [https://www.jma.go.jp/jma/indexe.html](https://www.jma.go.jp/jma/indexe.html)
 - Fire and Disaster Management Agency (FDMA): [https://www.fdma.go.jp/en/](https://www.fdma.go.jp/en/)
 - Tokyo Metropolitan Government – Disaster Prevention: [https://www.bousai.metro.tokyo.lg.jp](https://www.bousai.metro.tokyo.lg.jp)
+
+_Last Updated: 14/02/2025_
