@@ -5,6 +5,7 @@ breadcrumbs:
   - { title: 'Home', url: '/' }
   - { title: 'Disaster Preparedness', url: '/disaster' }
   - { title: 'Communication Methods', url: '/disaster/communication/' }
+description: Learn about effective communication tools and strategies to use during emergencies in Japan.
 ---
 
 ## Introduction
