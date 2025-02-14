@@ -35,4 +35,4 @@ Disasters often cause power outages which can disrupt communication and essentia
 - Fire and Disaster Management Agency (FDMA): [https://www.fdma.go.jp/en/](https://www.fdma.go.jp/en/)
 - Local power company websites
 
-_Last Updated: 01/10/2024_
+_Last Updated: 15/02/2025_
