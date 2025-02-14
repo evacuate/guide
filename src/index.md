@@ -52,4 +52,6 @@ While this site offers general guidelines, always refer to the following officia
 
 For any questions or to contribute to the development of this guide, please contact us through our [Feedback Form](https://github.com/evacuate/guide/issues).
 
+For a comprehensive overview on disaster preparedness, please visit the [Disaster Preparedness](./disaster/) page.
+
 _Last Updated: 04/10/2024_
