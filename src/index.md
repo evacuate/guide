@@ -54,4 +54,4 @@ For any questions or to contribute to the development of this guide, please cont
 
 For a comprehensive overview on disaster preparedness, please visit the [Disaster Preparedness](./disaster/) page.
 
-_Last Updated: 04/10/2024_
+_Last Updated: 15/02/2025_
