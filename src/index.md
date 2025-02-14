@@ -16,7 +16,7 @@ Below is a summary of the current progress for each disaster-specific page on th
 
 | **Disaster**                | **Page Completion Rate** | **Description**                           | **Last Updated** |
 | --------------------------- | ------------------------ | ----------------------------------------- | ---------------- |
-| [Earthquake](./earthquake/) | 100%                     | Guidelines for earthquake response        | 14/02/2024       |
+| [Earthquake](./earthquake/) | 100%                     | Guidelines for earthquake response        | 14/02/2025       |
 | Heavy Rain                  | 0%                       | Actions to take during heavy rainfall     | 01/10/2024       |
 | Strong Wind                 | 0%                       | Precautions during strong winds           | 01/10/2024       |
 | Fire                        | 0%                       | Fire safety and evacuation procedures     | 01/10/2024       |
