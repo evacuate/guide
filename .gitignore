@@ -12,3 +12,6 @@ _site/
 
 # Cache files
 .cache/
+
+# Export docs
+docs.json

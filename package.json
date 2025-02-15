@@ -24,12 +24,14 @@
     "preinstall": "npx -y only-allow pnpm",
     "sort": "node scripts/sort.mjs",
     "start": "eleventy --serve",
-    "watch": "eleventy --watch"
+    "watch": "eleventy --watch",
+    "export": "node scripts/export.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "clean-css-cli": "^5.6.3",
+    "gray-matter": "^4.0.3",
     "html-minifier-terser": "^7.2.0",
     "pagefind": "^1.1.1",
     "prettier": "^3.3.3"
